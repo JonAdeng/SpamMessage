@@ -2,14 +2,6 @@ from flask import Flask, request, jsonify
 import torch
 import pickle
 from flask_cors import CORS
-import gdown
-
-url = "https://drive.google.com/uc?id=1JH6NXQygYGDA9e_U4HhXYVAuIFZVwAfd"
-output = "backend_flask/dataset/indobert_tokenizer.pkl"
-gdown.download(url, output, quiet=False)
-url1 = "https://drive.google.com/uc?id=1sVxpucTDccVjYOnoy7h5-e9eSS4x_pIe"
-output1 = "backend_flask/dataset/indobert_finetuned.pkl"
-gdown.download(url1, output1, quiet=False)
 
 app = Flask(__name__)
 CORS(app)  # Mengizinkan akses dari frontend Vue.js
