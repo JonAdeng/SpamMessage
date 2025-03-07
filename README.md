@@ -6,6 +6,7 @@
 **Activating venv for this project**
 
 .\.venv\Scripts\activate.bat (For CMD) 
+
 .\.venv\Scripts\Activate.ps1 (For Powershell) 
 
 
